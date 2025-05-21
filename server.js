@@ -27,14 +27,6 @@ const server = new McpServer({
   version: "1.0.0"
 });
 
-// Add an addition tool
-server.tool("add",
-  { a: z.number(), b: z.number() },
-  async ({ a, b }) => ({
-    content: [{ type: "text", text: String(a + b) }]
-  })
-);
-
 // Add image analysis tool
 server.tool("analyzeImage",
   { imagePath: z.string().describe("Path to the image file on the host system") },
