@@ -36,6 +36,20 @@ export OPENAI_API_KEY=your_openai_api_key_here
 node server.js
 \`\`\`
 
+Connecting as an MCP Extension
+To connect this server as an MCP extension, add the following configuration to your client:
+
+\`\`\`json
+"vision-mcp": {
+  "command": "node",
+  "args": [
+    "path/to/vision-mcp/server.js",
+    "--stdio",
+    "--openai-api-key=OPENAI_API_KEY"
+  ]
+}
+\`\`\`
+
 ## Tools
 
 ### Analyze Image Tool
