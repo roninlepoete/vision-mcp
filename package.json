@@ -1,0 +1,28 @@
+{
+  "name": "vision-mcp",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol (MCP) server that provides vision capabilities using the OpenAI API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "openai": "^4.0.0",
+    "zod": "^3.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "vision",
+    "openai",
+    "gpt-4o"
+  ],
+  "author": "unthinkmedia",
+  "license": "MIT"
+}
